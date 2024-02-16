@@ -1,0 +1,21 @@
+const messages = [
+    "Desde el momento en que te conocí, supe que eras especial. Tu risa ilumina mi día y tus abrazos hacen que todo valga la pena. Estoy agradecido/a por cada momento contigo y espero pasar el resto de mi vida demostrándote cuánto Te Amo",
+    "Nuestro amor es como una hermosa sinfonía, cada nota se entrelaza perfectamente para crear una melodía única y eterna. Cada día a tu lado es una bendición, y no puedo imaginar mi vida sin ti. Eres mi inspiración, mi apoyo y mi mejor amigo/a. Te amo más de lo que las palabras pueden expresar",
+    "En cada pequeño gesto tuyo encuentro un recordatorio del increíble amor que compartimos. Desde las risas compartidas hasta las lágrimas consoladas, cada momento contigo es un tesoro que atesoro en mi corazón. Gracias por ser mi compañero/a de vida y mi roca en tiempos difíciles. Te amo más de lo que podrías imaginar",
+    "Tu amor es como un faro en medio de la oscuridad, guiándome hacia ti cuando me siento perdido/a. Cada día contigo es una nueva aventura llena de risas, conversaciones profundas y momentos inolvidables. Eres mi mejor amigo/a y mi amante, y no puedo esperar para ver lo que el futuro nos depara juntos. Te amo con todo mi corazón",
+    "Eres el amor de mi vida, mi alma gemela perdida hace mucho tiempo. Desde el momento en que te vi, supe que estabas destinado/a para mí. Tu amor me llena de alegría y esperanza, y cada día me siento agradecido/a por tenerte a mi lado. Eres mi todo, mi razón para vivir y mi mayor bendición. Te amo más de lo que las palabras pueden expresar",
+    "Cada día contigo es un nuevo capítulo en nuestra historia de amor. Desde los días soleados hasta las noches estrelladas, cada momento a tu lado es una bendición que nunca dejaré de apreciar. Tu amor me da fuerzas para enfrentar los desafíos de la vida y me llena de esperanza para el futuro. Eres mi confidente, mi compañero/a de aventuras y mi amor eterno. No importa qué obstáculos se interpongan en nuestro camino, siempre estaré aquí para ti, porque te amo con todo mi ser",
+    "Eres más que mi amor, eres mi mejor amigo/a y mi apoyo incondicional. Cada vez que nos miramos, veo el brillo del universo reflejado en tus ojos. Eres mi roca en tiempos de tormenta y mi inspiración en los días oscuros. A través de los altibajos de la vida, nuestro amor permanece inquebrantable. No hay palabras suficientes para expresar la profundidad de mis sentimientos por ti, pero espero que cada gesto y cada mirada te recuerden cuánto Te Amo",
+    "Contigo, el amor es un viaje emocionante que nunca termina. Desde el momento en que nos encontramos, supe que estábamos destinados a estar juntos. Cada paso que damos juntos es una aventura llena de risas, aprendizajes y crecimiento mutuo. Tu amor me ha enseñado el verdadero significado de la felicidad y la gratitud. Eres mi apoyo en tiempos difíciles y mi celebración en los buenos momentos. No importa a dónde nos lleve la vida, siempre caminaré a tu lado, porque contigo es donde pertenezco",
+    "Eres mi musa, mi inspiración para cada canción que escribo y cada sueño que persigo. Tu amor me da alas para volar y raíces para mantenerme firme. Cada día a tu lado es una obra maestra en constante evolución, llena de colores vibrantes y melodías suaves. A través de las risas y las lágrimas, nuestro amor solo crece más fuerte. Eres mi hogar en un mundo caótico y mi refugio en medio de la adversidad. Te amo más de lo que las palabras pueden expresar, y siempre seré tuyo/a, ahora y para siempre", 
+    "Eres mi luz en los días oscuros, mi guía en un mar de incertidumbre. Tu amor es mi ancla en aguas turbulentas y mi viento a favor en momentos de dificultad. En tus brazos encuentro paz y consuelo, y en tu sonrisa encuentro esperanza y alegría. Contigo, cada día es una aventura emocionante, llena de sorpresas y momentos inolvidables. Eres mi mejor amigo/a y mi amor eterno, y no puedo imaginar mi vida sin ti. Te amo más de lo que las estrellas pueden contar en el cielo, y siempre estaré agradecido/a por tenerte a mi lado",
+  ];
+  
+  let currentIndex = 0;
+  
+  function changeMessage() {
+    const messageElement = document.getElementById("mensaje");
+    currentIndex = (currentIndex + 1) % messages.length;
+    messageElement.textContent = messages[currentIndex];
+  }
+  
